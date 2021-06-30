@@ -7,11 +7,7 @@ export default function Header() {
     <Box px="4" pt="4" borderBottomColor="gray.700" borderBottomWidth="1px">
       <Flex justifyContent="space-between">
         <Link href="/">
-          <Heading _hover={{ cursor: "pointer" }} as="h1" size="lg">
-            Sip Portal
-          </Heading>
         </Link>
-        <ColorModeSwitcher />
       </Flex>
       <Navbar></Navbar>
     </Box>

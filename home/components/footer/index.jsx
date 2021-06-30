@@ -37,7 +37,7 @@ const SocialButton = ({ children, label, href }) => {
 
 export default function Footer() {
   return (
-    <Box borderTopWidth="gray.700" borderTopWidth="1px">
+    <Box borderTopWidth="gray.700" borderTopWidth="1px" bgGradient="linear(to-b, #ff4431, #f5231e)">
       <Container
         as={Stack}
         maxW={"6xl"}
@@ -48,16 +48,16 @@ export default function Footer() {
         align={{ base: "center", md: "center" }}
       >
         <Logo />
-        <Text>© 2021 Sip Grupo 8.</Text>
+        <Text color="white">© 2021 Sip Grupo 8.</Text>
         <Stack direction={"row"} spacing={6}>
           <SocialButton label={"Twitter"} href={"#"}>
-            <FaTwitter />
+            <FaTwitter color="white" />
           </SocialButton>
           <SocialButton label={"YouTube"} href={"#"}>
-            <FaYoutube />
+            <FaYoutube color="white" />
           </SocialButton>
           <SocialButton label={"Instagram"} href={"#"}>
-            <FaInstagram />
+            <FaInstagram color="white" />
           </SocialButton>
         </Stack>
       </Container>

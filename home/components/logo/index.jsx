@@ -2,7 +2,7 @@ import { Box } from "@chakra-ui/react"
 
 const Logo = (props) => {
     return (
-        <Box _hover={{cursor:"pointer"}}>
+        <Box _hover={{ cursor: "pointer" }}>
             {/* <svg
                 height={32}
                 viewBox="0 0 120 28"
@@ -17,7 +17,7 @@ const Logo = (props) => {
                     fill="#2F855A"
                 />
             </svg> */}
-            <img src="https://www.commend.com/cMedia/user_upload/sip_logo.png" alt="50" width="50" >
+            <img src="https://i3.lensdump.com/i/ZQkYOe.png" alt="50" width="100" >
             </img>
         </Box>
     );
