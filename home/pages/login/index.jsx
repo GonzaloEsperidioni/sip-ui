@@ -19,11 +19,17 @@ export default function LoginForm() {
   const router = useRouter();
   const login = async (e) => {
     e.preventDefault();
-    const res = await fetch(`http://localhost:8080/usuario/mail?mail=${email}`);
-    const user = await res.json();
-    setUser(user);
+    // const res = await fetch(`http://localhost:8080/usuario/mail?mail=${email}`);
+    // const user = await res.json();
+    setUser({
+      nombre: "Rolando",
+      apellid: "Biondi",
+      puntos: 123,
+      rol: email === 'gonza@gmail.com' ? "USER" : "ADMIN"
+    });
     router.push("/games");
   };
+
   return (
     <Flex align="center" justifyContent="center">
       <Box

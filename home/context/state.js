@@ -17,6 +17,10 @@ export function AppWrapper({ children }) {
       localStorage && localStorage.setItem("user", JSON.stringify(user));
       setUser(user);
     },
+    logout: () => {
+      localStorage && localStorage.setItem("user", '{}');
+      setUser({})
+    }
   };
   return (
     <AppContext.Provider value={sharedState}>{children}</AppContext.Provider>

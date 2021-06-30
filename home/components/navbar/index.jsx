@@ -47,11 +47,11 @@ const NavLink = ({ path, children }) => (
 );
 
 export default function Simple() {
-  const { user } = useAppContext();
+  const { user, logout } = useAppContext();
   const { isOpen, onOpen, onClose } = useDisclosure();
   const router = useRouter();
   const noRespondio = true;
-  console.log(user);
+ 
   return (
     <>
       <Box px={1}>
@@ -74,6 +74,16 @@ export default function Simple() {
                     Pregunta diaria!
                     <Badge ml="1" fontSize="0.8em" colorScheme="green">
                       BETA
+                    </Badge>
+                  </Button>
+                </NavLink>
+              )}
+              {user.rol === "ADMIN" && (
+                <NavLink path="backoffice">
+                  <Button>
+                    Backoffice
+                    <Badge ml="1" fontSize="0.8em" colorScheme="green">
+                      Nuevo!
                     </Badge>
                   </Button>
                 </NavLink>
@@ -104,6 +114,7 @@ export default function Simple() {
                 {!user.nombre && <Button>Login</Button>}
               </NavLink>
             }
+            {user && user.nombre && <Button onClick={logout}>Logout</Button>}
           </Flex>
         </Flex>
 
