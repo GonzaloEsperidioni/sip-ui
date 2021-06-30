@@ -15,6 +15,7 @@ import {
   useColorModeValue,
   Badge,
   Stack,
+  Text
 } from "@chakra-ui/react";
 import NextLink from "next/link";
 import Logo from "/components/logo";
@@ -57,11 +58,11 @@ export default function Simple() {
   //const colorButton = useColorModeValue("red","blue");
   return (
     <>
-      <Box px={1}>
+      <Box px={1} py={1}>
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <HStack spacing={8} alignItems={"center"}>
-            <Box>
-              <Logo />
+            <Box mb={"3"}>
+              <Logo  />
             </Box>
             <HStack as={"nav"} spacing={4}>
               {Links.map((link) => {
@@ -73,7 +74,7 @@ export default function Simple() {
               })}
               {user.nombre && noRespondio && (
                 <NavLink path="preguntadiaria">
-                  <Button colorScheme="red">
+                  <Button colorScheme="red" bgColor="red" color="white">
                     Pregunta diaria!
                     <Badge ml="1" fontSize="0.8em" colorScheme="green">
                       BETA
@@ -83,7 +84,7 @@ export default function Simple() {
               )}
               {user.rol === "ADMIN" && (
                 <NavLink path="backoffice">
-                  <Button colorScheme="red">
+                  <Button colorScheme="red" bgColor="red" color="white">
                     Backoffice
                     <Badge ml="1" fontSize="0.8em" colorScheme="green">
                       Nuevo!
@@ -96,9 +97,12 @@ export default function Simple() {
           <Flex alignItems={"center"}>
             {user && user.nombre && (
               <Menu>
-                {user.puntos} Puntos
+                <Text color ="white">
+                  {user.puntos} Puntos
+                </Text>
                 <MenuButton
                   marginLeft="16px"
+                  mr={"3"}
                   as={Button}
                   rounded={"full"}
                   variant={"link"}
@@ -108,17 +112,18 @@ export default function Simple() {
                   <Avatar
                     size={"sm"}
                     name={`${user.nombre} ${user.apellido}`}
+
                   />
                 </MenuButton>
               </Menu>
             )}
             {
               <NavLink path="login">
-                {!user.nombre && <Button>Login</Button>}
+                {!user.nombre && <Button colorScheme="red" bgColor="red" color="white">Login</Button>}
               </NavLink>
             }
-            {user && user.nombre && <Button onClick={logout}>Logout</Button>}
-            <ColorModeSwitcher/>
+            {user && user.nombre && <Button colorScheme="red" bgColor="red" color="white" onClick={logout} mr={"3"} >Logout</Button>}
+            <ColorModeSwitcher />
 
           </Flex>
         </Flex>
