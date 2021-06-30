@@ -20,6 +20,8 @@ import NextLink from "next/link";
 import Logo from "/components/logo";
 import { useAppContext } from "/context/state";
 import { useRouter } from "next/router";
+import ColorModeSwitcher from "/components/colorModeSwitcher";
+
 
 const Links = [
   { title: "Inicio", path: "" },
@@ -52,7 +54,7 @@ export default function Simple() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const router = useRouter();
   const noRespondio = true;
- 
+  //const colorButton = useColorModeValue("red","blue");
   return (
     <>
       <Box px={1}>
@@ -71,7 +73,7 @@ export default function Simple() {
               })}
               {user.nombre && noRespondio && (
                 <NavLink path="preguntadiaria">
-                  <Button>
+                  <Button colorScheme="red">
                     Pregunta diaria!
                     <Badge ml="1" fontSize="0.8em" colorScheme="green">
                       BETA
@@ -81,7 +83,7 @@ export default function Simple() {
               )}
               {user.rol === "ADMIN" && (
                 <NavLink path="backoffice">
-                  <Button>
+                  <Button colorScheme="red">
                     Backoffice
                     <Badge ml="1" fontSize="0.8em" colorScheme="green">
                       Nuevo!
@@ -116,10 +118,10 @@ export default function Simple() {
               </NavLink>
             }
             {user && user.nombre && <Button onClick={logout}>Logout</Button>}
-            <ColorModeSwitcher></ColorModeSwitcher>
+            <ColorModeSwitcher/>
+
           </Flex>
         </Flex>
-
         {isOpen ? (
           <Box pb={4}>
             <Stack as={"nav"} spacing={4}>

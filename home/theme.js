@@ -5,7 +5,7 @@ export default extendTheme({
     initialColorMode: "dark",
   },
   colors: {
-    primary: theme.colors.twitter,
+    primary: theme.colors.red,
     secondary: {
       50: "#ffe2ec",
       100: "#ffb3c5",
