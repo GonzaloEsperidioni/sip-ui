@@ -34,7 +34,7 @@ const Ma = ({ nombre, puesto, cumple }) => {
   const cancelRef = React.useRef();
   return (
     <>
-      <AlertDialog isOpen={isOpen} leastDestructiveRef={cancelRef}>
+      <AlertDialog onClose={() => {}} isOpen={isOpen} leastDestructiveRef={cancelRef}>
         <AlertDialogOverlay>
           <AlertDialogContent>
             <AlertDialogHeader fontSize="lg" fontWeight="bold">
