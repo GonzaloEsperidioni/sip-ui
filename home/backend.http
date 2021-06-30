@@ -1,0 +1,45 @@
+### Traigo todos los users
+http://localhost:8080/usuario 
+
+### Creo usuario
+POST http://localhost:8080/usuario HTTP/1.1
+content-type: application/json
+
+{
+    "nombre": "Rolando Biondi",
+    "apellido": "Esperidioni",
+    "mail": "gesper1@gmail.com"
+}
+
+### Get por ID de usuario
+http://localhost:8080/usuario/b0042ff6-2649-4bb5-a91a-bf58e1d961ed
+
+### Get por mail de usuario
+http://localhost:8080/usuario/mail?mail=gesper@gmail.com
+
+### Juegos
+http://localhost:8080/juego
+
+### Sumar puntos
+POST http://localhost:8080/usuario/sumarpuntos HTTP/1.1
+content-type: application/json
+
+{
+    "id": "ec9c908c-72c7-4853-b64c-5ef62639af46",
+    "idjuego" : 2,
+    "puntos": 60
+}   
+
+### Premios
+http://localhost:8080/premio
+
+### Canjear premio x puntos
+POST http://localhost:8080/premio/canjearpremio HTTP/1.1
+content-type: application/json
+
+{
+    "id": "b0042ff6-2649-4bb5-a91a-bf58e1d961ed",
+    "idjuego" : 2,
+    "puntos": 60
+}   
+

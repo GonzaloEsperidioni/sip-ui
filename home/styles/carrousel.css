@@ -1,0 +1,247 @@
+.carousel {
+    position: relative;
+}   
+
+
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    left: 0;
+    z-index: 15;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-item {
+    position: relative;
+    display: none;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    transition: -webkit-transform .6s ease;
+    transition: transform .6s ease;
+    transition: transform .6s ease,-webkit-transform .6s ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+}
+
+.carousel-item a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+
+.carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 15%;
+    color: #fff;
+    text-align: center;
+    opacity: .5;
+}
+
+.carousel-control-next {
+    right: 0;
+}
+
+
+/**************/
+
+.cont {
+    padding-left: 20px;
+}
+
+.slider {
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+.slides{
+    width: 3000px;
+    height: 500px;
+    display: flex ;
+
+}
+
+.slides input{
+    display: none;
+}
+
+
+.slide {
+    width: 28%;
+    transition: 2s;
+    min-height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.slide img{
+    width: 1800px;
+    height: 500px;
+    
+}
+
+
+/*Navegation manual */
+
+.navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #0d1218;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+
+}
+
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background: #40D3DC;
+
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+
+
+/******************/
+.card {
+    float: left;
+    width: 100%;
+    border-radius: 10px;
+}
+.card {
+    border-radius: 10px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: rgba(4, 1, 22, 0.125);
+    background-clip: border-box;
+    border: 1px solid rgba(4, 1, 22, 0.125);
+    /* border-radius: .25rem; */
+}
+
+.card-body {
+    border-radius: 10px;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    /* padding: 1.25rem; */
+}
+
+.card-text {
+    border-radius: 10px;
+    margin: 0;
+    font-family: poppins;
+    font-size: 18px;
+    font-weight: 100;
+    color: #5B5B5B;
+}
+
+.novedad_bajada, .txt {
+    font-size: 16px;
+    line-height: 120%;
+    font-family: poppins;
+    font-size: 18px;
+    /* font-family: "Nunito";
+    font-style: normal; */
+    color: #5B5B5B;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 3 !important;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.novedad_vermas {
+    font-size: 12px;
+    font-family: "Montserrat";
+    font-style: normal;
+    margin-top: 6px;
+    clear: both;
+    display: inline-block;
+    text-decoration: underline;
+}
+
+a, a:hover, .btn {
+    outline: none !important;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+.pad {
+
+    margin-left: 10px;
+}
