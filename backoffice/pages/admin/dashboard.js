@@ -90,14 +90,14 @@ function Dashboard() {
               <CardIcon color="dark">
                 <Icon>content_copy</Icon>
               </CardIcon>
-              <p className={classes.cardCategory}>Cajes realizados</p>
+              <p className={classes.cardCategory}>Canjes realizados</p>
               <h3 className={classes.cardTitle}>
-                50
+                262
               </h3>
             </CardHeader>
             <CardFooter stats>
               <div className={classes.stats}>
-                Puntos usados 5.000
+                Puntos usados 26.000
               </div>
             </CardFooter>
           </Card>
@@ -134,7 +134,7 @@ function Dashboard() {
               />
             </CardHeader>
             <CardBody>
-              <h4 className={classes.cardTitle}>Usuarios personas</h4>
+              <h4 className={classes.cardTitle}>Respuestas diarias de la semana</h4>
               <p className={classes.cardCategory}>
                 <span className={classes.successText}>
                   <ArrowUpward className={classes.upArrowCardCategory} /> 55%
@@ -157,7 +157,7 @@ function Dashboard() {
               />
             </CardHeader>
             <CardBody>
-              <h4 className={classes.cardTitle}>Partidas Jugada</h4>
+              <h4 className={classes.cardTitle}>Partidas Jugadas</h4>
               <p className={classes.cardCategory}>Juego: <select><option>Todo</option><option>Quiz Battle</option></select></p>
             </CardBody>
           </Card>
