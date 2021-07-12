@@ -33,15 +33,15 @@ const Component = () => {
   const slides = [
     {
       href: "/games",
-      img: "https://i3.lensdump.com/i/Zmhj0Z.png",
+      img: "https://i.imgur.com/vS4BuCs.png",
     },
     {
       href: "/birthday",
-      img: "https://i.lensdump.com/i/Zmh0qP.png",
+      img: "https://i.imgur.com/ExjmiJJ.png",
     },
     {
       href: "/preguntadiaria",
-      img: "https://i1.lensdump.com/i/ZmhIYm.png",
+      img: "https://i.imgur.com/bARvlyX.png",
     },
   ];
 

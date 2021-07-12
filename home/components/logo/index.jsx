@@ -17,7 +17,7 @@ const Logo = (props) => {
                     fill="#2F855A"
                 />
             </svg> */}
-            <img src="https://i3.lensdump.com/i/ZQkYOe.png" alt="50" width="100" >
+            <img src="https://i.imgur.com/E5RLCvf.png" alt="50" width="100" >
             </img>
         </Box>
     );
