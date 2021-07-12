@@ -26,18 +26,22 @@ export default function PreguntaDiaria() {
               puesto: "Software Engineer",
               nombre: "Gonzalo Esperidioni",
               cumple: "05/12/2021",
+              imagen: "https://images.unsplash.com/photo-1589992896844-9b720813d1cb?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8eW91bmclMjBtYW58ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
             },
             {
               id: 2,
               puesto: "Business Intelligence",
               nombre: "Rolando Biondi",
               cumple: "09/12/2021",
+              imagen: "https://images.unsplash.com/photo-1542156822-6924d1a71ace?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+
             },
             {
               id: 3,
               puesto: "Business Intelligence",
-              nombre: "Rolando Biondi",
+              nombre: "Rafael Espinosa",
               cumple: "12/08/2021",
+              imagen: "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8eW91bmclMjBtYW58ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
             },
           ].map((item) => {
             return <UserCard key={item.id} {...item}></UserCard>;

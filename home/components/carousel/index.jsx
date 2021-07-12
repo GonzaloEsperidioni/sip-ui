@@ -33,15 +33,15 @@ const Component = () => {
   const slides = [
     {
       href: "/games",
-      img: "https://revistadigital.inesem.es/gestion-empresarial/files/2018/08/destacada-1020x679.jpg",
+      img: "https://i3.lensdump.com/i/Zmhj0Z.png",
     },
     {
       href: "/birthday",
-      img: "https://ichef.bbci.co.uk/news/640/cpsprodpb/1462D/production/_104910538_gettyimages-871610664.jpg",
+      img: "https://i.lensdump.com/i/Zmh0qP.png",
     },
     {
       href: "/preguntadiaria",
-      img: "https://emprendedoresnews.com/wp-content/uploads/2018/06/A0CG0002140-e1528395408432.jpg",
+      img: "https://i1.lensdump.com/i/ZmhIYm.png",
     },
   ];
 

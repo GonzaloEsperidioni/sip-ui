@@ -71,7 +71,7 @@ const Noticias = () => {
                 <Image
                   transform="scale(1.0)"
                   src={
-                    "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80"
+                    "https://images.unsplash.com/photo-1560574188-6a6774965120?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
                   }
                   alt="some text"
                   objectFit="contain"
@@ -94,7 +94,7 @@ const Noticias = () => {
               opinión para ayudar en seguir mejorando el portal.
             </Text>
             <BlogAuthor
-              name="Empleado de HR"
+              name="Mauricio Fernandez"
               date={new Date("2021-04-06T19:01:27Z")}
             />
           </Box>
@@ -107,7 +107,7 @@ const Noticias = () => {
                 <Image
                   transform="scale(1.0)"
                   src={
-                    "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80"
+                    "https://images.unsplash.com/photo-1593998066526-65fcab3021a2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1049&q=80"
                   }
                   alt="some text"
                   objectFit="contain"
@@ -130,7 +130,7 @@ const Noticias = () => {
               de canje
             </Text>
             <BlogAuthor
-              name="John Doe"
+              name="Mauricio Fernandez"
               date={new Date("2021-04-06T19:01:27Z")}
             />
           </Box>
@@ -142,7 +142,7 @@ const Noticias = () => {
                 <Image
                   transform="scale(1.0)"
                   src={
-                    "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80"
+                    "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
                   }
                   alt="some text"
                   objectFit="contain"

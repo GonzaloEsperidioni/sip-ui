@@ -226,7 +226,7 @@ function Dashboard() {
               <CardIcon color="warning">
                 <Icon>info_outline</Icon>
               </CardIcon>
-              <p className={classes.cardCategory}>CTR Respuestas</p>
+              <p className={classes.cardCategory}>Porcentaje de respuestas</p>
               <h3 className={classes.cardTitle}>87%</h3>
             </CardHeader>
             <CardFooter stats icon>

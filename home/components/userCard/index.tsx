@@ -16,7 +16,7 @@ import {
 } from "@chakra-ui/react";
 import { StarIcon } from "@chakra-ui/icons";
 
-const Ma = ({ nombre, puesto, cumple }) => {
+const Ma = ({ nombre, puesto, cumple, imagen }) => {
   const toast = useToast();
   const [isOpen, setIsOpen] = React.useState(false);
   const onClose = (send) => {
@@ -72,7 +72,7 @@ const Ma = ({ nombre, puesto, cumple }) => {
           w="full"
           h={56}
           fit="cover"
-          src="https://images.unsplash.com/photo-1542156822-6924d1a71ace?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+          src={imagen}
           alt="avatar"
         />
 

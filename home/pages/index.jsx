@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Home | Sip Grupo 8</title>
+        <title>Zam!</title>
         <meta name="description" content="MVP app" />
         <link rel="icon" href="/favicon.ico" />
         <link
