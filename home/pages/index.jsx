@@ -48,8 +48,8 @@ export default function Home() {
               p="12px"
               bg="primary"
             >
-              <Heading size="md">Sprint Review 3</Heading>
-              <Text>Se mostrarán avances del desarrollo del MVP</Text>
+              <Heading size="md">Exposicion MVP</Heading>
+              <Text>Se mostrará el desarrollo del MVP</Text>
               <Text textAlign="right" fontWeight="bold">
                 Hoy.
               </Text>
@@ -60,10 +60,10 @@ export default function Home() {
               p="12px"
               bg="primary"
             >
-              <Heading size="md">Fin Sprint 4</Heading>
-              <Text>Entrega Final</Text>
+              <Heading size="md">Meeting con futuros inversores</Heading>
+              <Text></Text>
               <Text textAlign="right" fontWeight="bold">
-                30 de Junio a las 18.30hs
+                15 de Agosto a las 18.30hs
               </Text>
               <Button variant="link">Ver mas...</Button>
             </Box>
@@ -73,10 +73,10 @@ export default function Home() {
               p="12px"
               bg="primary"
             >
-              <Heading size="md">Presentación Final</Heading>
-              <Text>Arrancan las presentaciones de los MVP</Text>
+              <Heading size="md">Desayuno con el CEO</Heading>
+              <Text>Comparte un desayuno</Text>
               <Text textAlign="right" fontWeight="bold">
-                07 de Julio a las 18:30{" "}
+                23 de Agosto a las 09:00{" "}
               </Text>
               <Button variant="link">Ver mas...</Button>
             </Box>
