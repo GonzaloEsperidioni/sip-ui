@@ -10,12 +10,43 @@ const REMERA =
 const HAMBURGESA =
   "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80";
 
+const getImage = (id) => {
+  if (id === 1) return IMAGE;
+  if (id === 2) return REMERA;
+  return HAMBURGESA;
+};
+
 export default function PrizesPage() {
   const [data, setData] = useState(null);
   useEffect(async () => {
-    const res = await fetch("http://localhost:8080/premio");
-    const premios = await res.json();
-    setData(premios);
+    try {
+      const res = await fetch("http://localhost:8080/premio");
+      const premios = await res.json();
+    } catch (e) {}
+
+    setData([
+      {
+        id: 1,
+        descripcion: "Café",
+        puntos: 90,
+        activo: true,
+        stock: 100,
+      },
+      {
+        id: 2,
+        descripcion: "Remera Empresa",
+        puntos: 500,
+        activo: true,
+        stock: 100,
+      },
+      {
+        id: 3,
+        descripcion: "Almuerzo",
+        puntos: 200,
+        activo: true,
+        stock: 100,
+      },
+    ]);
   }, []);
   const claimPrize = () => {};
   return (
@@ -31,7 +62,7 @@ export default function PrizesPage() {
                   key={id}
                   title={descripcion}
                   price={puntos}
-                  picture={IMAGE}
+                  picture={getImage(id)}
                   stock={stock}
                   onClick={() => claimPrize(id)}
                 />

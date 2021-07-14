@@ -15,7 +15,7 @@ import {
   useColorModeValue,
   Badge,
   Stack,
-  Text
+  Text,
 } from "@chakra-ui/react";
 import NextLink from "next/link";
 import Logo from "/components/logo";
@@ -23,11 +23,9 @@ import { useAppContext } from "/context/state";
 import { useRouter } from "next/router";
 import ColorModeSwitcher from "/components/colorModeSwitcher";
 
-
 const Links = [
   { title: "Inicio", path: "" },
   { title: "Juegos", path: "games" },
-  { title: "Estadisticas", path: "scoreboard" },
   { title: "Cumpleaños", path: "birthday" },
   { title: "Beneficios", path: "beneficios" },
   { title: "Canje", path: "prizes" },
@@ -62,7 +60,7 @@ export default function Simple() {
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <HStack spacing={8} alignItems={"center"}>
             <Box mb={"3"}>
-              <Logo  />
+              <Logo />
             </Box>
             <HStack as={"nav"} spacing={4}>
               {Links.map((link) => {
@@ -97,9 +95,7 @@ export default function Simple() {
           <Flex alignItems={"center"}>
             {user && user.nombre && (
               <Menu>
-                <Text color ="white">
-                  {user.puntos} Puntos
-                </Text>
+                <Text color="white">{user.puntos} Puntos</Text>
                 <MenuButton
                   marginLeft="16px"
                   mr={"3"}
@@ -112,19 +108,31 @@ export default function Simple() {
                   <Avatar
                     size={"sm"}
                     name={`${user.nombre} ${user.apellido}`}
-
                   />
                 </MenuButton>
               </Menu>
             )}
             {
               <NavLink path="login">
-                {!user.nombre && <Button colorScheme="red" bgColor="red" color="white">Login</Button>}
+                {!user.nombre && (
+                  <Button colorScheme="red" bgColor="red" color="white">
+                    Login
+                  </Button>
+                )}
               </NavLink>
             }
-            {user && user.nombre && <Button colorScheme="red" bgColor="red" color="white" onClick={logout} mr={"3"} >Logout</Button>}
+            {user && user.nombre && (
+              <Button
+                colorScheme="red"
+                bgColor="red"
+                color="white"
+                onClick={logout}
+                mr={"3"}
+              >
+                Logout
+              </Button>
+            )}
             <ColorModeSwitcher />
-
           </Flex>
         </Flex>
         {isOpen ? (

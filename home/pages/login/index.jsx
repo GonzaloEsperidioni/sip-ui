@@ -27,7 +27,7 @@ export default function LoginForm() {
       puntos: 500,
       rol: email === "gonza@gmail.com" ? "USER" : "ADMIN",
     });
-    router.push("/games");
+    router.push("/");
   };
 
   return (

@@ -54,28 +54,23 @@ function Dashboard() {
                 <Icon>content_copy</Icon>
               </CardIcon>
               <p className={classes.cardCategory}>Empleados</p>
-              <h3 className={classes.cardTitle}>
-                402
-              </h3>
+              <h3 className={classes.cardTitle}>402</h3>
             </CardHeader>
             <CardFooter stats>
               <div className={classes.stats}>
                 Ultimo mes 400 usuarios accedieron
               </div>
             </CardFooter>
-          
           </Card>
         </GridItem>
         <GridItem xs={12} sm={6} md={3}>
-        <Card>
+          <Card>
             <CardHeader color="dark" stats icon>
               <CardIcon color="dark">
                 <Icon>content_copy</Icon>
               </CardIcon>
               <p className={classes.cardCategory}>Partidas jugadas</p>
-              <h3 className={classes.cardTitle}>
-                1206
-              </h3>
+              <h3 className={classes.cardTitle}>1206</h3>
             </CardHeader>
             <CardFooter stats>
               <div className={classes.stats}>
@@ -85,38 +80,30 @@ function Dashboard() {
           </Card>
         </GridItem>
         <GridItem xs={12} sm={6} md={3}>
-        <Card>
+          <Card>
             <CardHeader color="dark" stats icon>
               <CardIcon color="dark">
                 <Icon>content_copy</Icon>
               </CardIcon>
               <p className={classes.cardCategory}>Canjes realizados</p>
-              <h3 className={classes.cardTitle}>
-                262
-              </h3>
+              <h3 className={classes.cardTitle}>262</h3>
             </CardHeader>
             <CardFooter stats>
-              <div className={classes.stats}>
-                Puntos usados 26.000
-              </div>
+              <div className={classes.stats}>Puntos usados 26.000</div>
             </CardFooter>
           </Card>
         </GridItem>
         <GridItem xs={12} sm={6} md={3}>
-        <Card>
+          <Card>
             <CardHeader color="dark" stats icon>
               <CardIcon color="dark">
                 <Icon>content_copy</Icon>
               </CardIcon>
               <p className={classes.cardCategory}>Puntos regalados</p>
-              <h3 className={classes.cardTitle}>
-                500
-              </h3>
+              <h3 className={classes.cardTitle}>500</h3>
             </CardHeader>
             <CardFooter stats>
-              <div className={classes.stats}>
-                10 regalos
-              </div>
+              <div className={classes.stats}>10 regalos</div>
             </CardFooter>
           </Card>
         </GridItem>
@@ -134,7 +121,9 @@ function Dashboard() {
               />
             </CardHeader>
             <CardBody>
-              <h4 className={classes.cardTitle}>Respuestas diarias de la semana</h4>
+              <h4 className={classes.cardTitle}>
+                Respuestas diarias de la semana
+              </h4>
               <p className={classes.cardCategory}>
                 <span className={classes.successText}>
                   <ArrowUpward className={classes.upArrowCardCategory} /> 55%
@@ -158,14 +147,20 @@ function Dashboard() {
             </CardHeader>
             <CardBody>
               <h4 className={classes.cardTitle}>Partidas Jugadas</h4>
-              <p className={classes.cardCategory}>Juego: <select><option>Todo</option><option>Quiz Battle</option></select></p>
+              <p className={classes.cardCategory}>
+                Juego:{" "}
+                <select>
+                  <option>Todo</option>
+                  <option>Quiz Battle</option>
+                </select>
+              </p>
             </CardBody>
           </Card>
         </GridItem>
         <GridItem xs={12} sm={12} md={4}>
           <Card chart>
             <CardHeader color="warning">
-            <ChartistGraph
+              <ChartistGraph
                 className="ct-chart"
                 data={completedTasksChart.data}
                 type="Bar"
@@ -176,13 +171,20 @@ function Dashboard() {
             </CardHeader>
             <CardBody>
               <h4 className={classes.cardTitle}>Canjes realizados</h4>
-              <p className={classes.cardCategory}>Producto: <select><option>Todo</option><option>Cafe starbucks</option><option>Descuento Curso UDEMY</option></select></p>
+              <p className={classes.cardCategory}>
+                Producto:{" "}
+                <select>
+                  <option>Todo</option>
+                  <option>Cafe starbucks</option>
+                  <option>Descuento Curso UDEMY</option>
+                </select>
+              </p>
             </CardBody>
           </Card>
         </GridItem>
       </GridContainer>
       <h4>Seccion preguntas diarias</h4>
-      <input type="date" />
+      <input type="date" defaultValue="2021-07-14" />
       <GridContainer>
         <GridItem xs={12} sm={6} md={3}>
           <Card>
@@ -191,9 +193,7 @@ function Dashboard() {
                 <Icon>content_copy</Icon>
               </CardIcon>
               <p className={classes.cardCategory}>Respuestas hoy</p>
-              <h3 className={classes.cardTitle}>
-                352 
-              </h3>
+              <h3 className={classes.cardTitle}>352</h3>
             </CardHeader>
             <CardFooter stats>
               <div className={classes.stats}>
@@ -201,7 +201,6 @@ function Dashboard() {
                 Ultimas 24 hs
               </div>
             </CardFooter>
-          
           </Card>
         </GridItem>
         <GridItem xs={12} sm={6} md={3}>
@@ -214,9 +213,7 @@ function Dashboard() {
               <h3 className={classes.cardTitle}>+ 100%</h3>
             </CardHeader>
             <CardFooter stats>
-              <div className={classes.stats}>
-                  .
-              </div>
+              <div className={classes.stats}>.</div>
             </CardFooter>
           </Card>
         </GridItem>
@@ -230,7 +227,6 @@ function Dashboard() {
               <h3 className={classes.cardTitle}>87%</h3>
             </CardHeader>
             <CardFooter stats icon>
-              
               <div className={classes.stats}>
                 <Warning />
                 352 / 402
@@ -238,14 +234,15 @@ function Dashboard() {
             </CardFooter>
           </Card>
         </GridItem>
-        
       </GridContainer>
       <GridContainer>
-      
         <GridItem xs={12} sm={12} md={8}>
           <Card>
             <CardHeader color="warning">
-              <h4 className={classes.cardTitleWhite}>Que tan conforme estas con los beneficios ofrecios por la empresa?</h4>
+              <h4 className={classes.cardTitleWhite}>
+                Que tan conforme estas con los beneficios ofrecios por la
+                empresa?
+              </h4>
             </CardHeader>
             <CardBody>
               <Table
