@@ -24,8 +24,8 @@ export default function LoginForm() {
     setUser({
       nombre: "Rolando",
       apellid: "Biondi",
-      puntos: 123,
-      rol: email === 'gonza@gmail.com' ? "USER" : "ADMIN"
+      puntos: 500,
+      rol: email === "gonza@gmail.com" ? "USER" : "ADMIN",
     });
     router.push("/games");
   };

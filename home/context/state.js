@@ -18,9 +18,18 @@ export function AppWrapper({ children }) {
       setUser(user);
     },
     logout: () => {
-      localStorage && localStorage.setItem("user", '{}');
-      setUser({})
-    }
+      localStorage && localStorage.setItem("user", "{}");
+      setUser({});
+    },
+    discountPoints: (points = 0) => {
+      if (user) {
+        setUser({
+          ...user,
+          puntos: user.puntos - points,
+        });
+        localStorage && localStorage.setItem("user", JSON.stringify(user));
+      }
+    },
   };
   return (
     <AppContext.Provider value={sharedState}>{children}</AppContext.Provider>

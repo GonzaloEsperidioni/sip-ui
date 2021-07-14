@@ -15,8 +15,14 @@ import {
   useToast,
 } from "@chakra-ui/react";
 import { StarIcon } from "@chakra-ui/icons";
+import { useAppContext } from "../../context/state";
 
 const Ma = ({ nombre, puesto, cumple, imagen }) => {
+  const { discountPoints } = useAppContext();
+  const donatePoints = (points) => {
+    discountPoints(points);
+    onClose(true);
+  };
   const toast = useToast();
   const [isOpen, setIsOpen] = React.useState(false);
   const onClose = (send) => {
@@ -34,7 +40,11 @@ const Ma = ({ nombre, puesto, cumple, imagen }) => {
   const cancelRef = React.useRef();
   return (
     <>
-      <AlertDialog onClose={() => {}} isOpen={isOpen} leastDestructiveRef={cancelRef}>
+      <AlertDialog
+        onClose={() => {}}
+        isOpen={isOpen}
+        leastDestructiveRef={cancelRef}
+      >
         <AlertDialogOverlay>
           <AlertDialogContent>
             <AlertDialogHeader fontSize="lg" fontWeight="bold">
@@ -51,7 +61,7 @@ const Ma = ({ nombre, puesto, cumple, imagen }) => {
               </Button>
               <Button
                 colorScheme="primary"
-                onClick={() => onClose(true)}
+                onClick={() => donatePoints(50)}
                 ml={3}
               >
                 Aceptar!
@@ -68,13 +78,7 @@ const Ma = ({ nombre, puesto, cumple, imagen }) => {
         overflow="hidden"
         mx="auto"
       >
-        <Image
-          w="full"
-          h={56}
-          fit="cover"
-          src={imagen}
-          alt="avatar"
-        />
+        <Image w="full" h={56} fit="cover" src={imagen} alt="avatar" />
 
         <Box py={5} textAlign="center">
           <Link
