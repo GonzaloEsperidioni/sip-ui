@@ -210,7 +210,7 @@ function Dashboard() {
                 <Store />
               </CardIcon>
               <p className={classes.cardCategory}>vs Dia anterior</p>
-              <h3 className={classes.cardTitle}>+ 100%</h3>
+              <h3 className={classes.cardTitle}>+ 14%</h3>
             </CardHeader>
             <CardFooter stats>
               <div className={classes.stats}>.</div>
@@ -249,7 +249,7 @@ function Dashboard() {
                 tableHeaderColor="warning"
                 tableHead={["Respuesta", "Cantidad"]}
                 tableData={[
-                  ["Muy conforme", "200"],
+                  ["Muy conforme", "202"],
                   ["Conforme", "50"],
                   ["Disconforme", "59"],
                   ["Muy disconforme", "41"],

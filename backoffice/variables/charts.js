@@ -12,8 +12,8 @@ var delays2 = 80,
 
 const dailySalesChart = {
   data: {
-    labels: ["M", "T", "W", "T", "F", "S", "S"],
-    series: [[12, 17, 7, 17, 23, 18, 38]],
+    labels: ["L", "M", "MI", "J", "V"],
+    series: [[12, 17, 7, 17, 23]],
   },
   options: {
     low: 0,
@@ -127,7 +127,7 @@ const emailsSubscriptionChart = {
 
 const completedTasksChart = {
   data: {
- labels: [
+    labels: [
       "Jan",
       "Feb",
       "Mar",
@@ -142,7 +142,6 @@ const completedTasksChart = {
       "Dec",
     ],
     series: [[0, 0, 0, 0, 50, 89, 123, 0, 0, 0, 0, 0]],
-
   },
   options: {
     low: 0,
